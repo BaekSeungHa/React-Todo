@@ -18,7 +18,7 @@ function App() {
     },
     {
       id: 3,
-      text: "철구 시청하기",
+      text: "랄로 시청하기",
       checked: false,
     },
   ]);
