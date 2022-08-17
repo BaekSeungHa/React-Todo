@@ -11,6 +11,8 @@ function TodoInsert({ onInsert }) {
 
   const onSubmit = useCallback(
     (e) => {
+      e.preventDefault();
+      if (!value) return;
       onInsert(value);
       setValue(""); //value값 초기화
 
