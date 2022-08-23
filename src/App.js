@@ -3,6 +3,7 @@ import "./App.css";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
+import Example from "./error";
 
 function App() {
   const [todos, setTodos] = useState([
@@ -60,6 +61,7 @@ function App() {
   );
   return (
     <TodoTemplate>
+      <Example></Example>
       <TodoInsert onInsert={onInsert} />
       <TodoList todos={todos} onRemove={onRemove} onToggle={onToggle} />
     </TodoTemplate>
